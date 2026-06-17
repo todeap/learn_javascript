@@ -1,0 +1,33 @@
+What is the difference between ++i and i++? --> ++i first increment and then pass and i++ first pass then increment.
+
+What do you think would happen if you pass an index beyond the range of the string? Or if you pass a negative index? Try it out. 
+let name = "Atul";
+console.log(name[10]); // empty String ""
+console.log(name[-1]); // empty String ""
+
+Do you think JSON.stringify would work for arrays as well? What about nested objects? What happens if we pass numbers, strings, undefined, null to JSON.stringify?
+1> JSON.stringify([1, 2, 3]); // "[1,2,3]"
+2> JSON.stringify({
+  name: "Atul",
+  address: {
+    city: "Pune"
+  }
+}); --> {"name":"Atul","address":{"city":"Pune"}}
+3> JSON.stringify(123); // "123"
+4> JSON.stringify("Hello"); // "\"Hello\""
+5> JSON.stringify(null); // "null"
+6> JSON.stringify(undefined); // undefined
+
+
+What happens if you pass a regular/invalid JSON string to JSON.parse? What will happen if such an invalid function runs in the program? Will other parts of the code execute correctly after that?
+1> JSON.parse('{"name":"Atul"}'); // { name: "Atul" }
+2> JSON.parse("{name:'Atul'}"); // syntax error
+3> console.log("Start"); // "start"
+JSON.parse("{invalid}"); // Syntax Error
+console.log("End"); // never Executed
+4> try {
+    JSON.parse("{invalid}");
+} catch (e) {
+    console.log("Invalid JSON");
+}
+console.log("Program continues");

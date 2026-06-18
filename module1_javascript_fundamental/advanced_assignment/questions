@@ -1,0 +1,17 @@
+/* Write a function to check deep equality of two nested objects/arrays
+Write a recursive function to create a deep clone of a nested object
+Write a function that returns a nested key within an object:
+Example: 
+{
+	name:”Harry Potter”,
+	age: 12,
+	address: {
+		details: [“4”, “Privet Drive”],
+		area:”Little Whinging”,
+		city: “Surrey”,
+		state: “England”
+	} 
+}
+getNestedKey(obj, “address.details.1”) 
+//This should return “Privet Drive”
+ */

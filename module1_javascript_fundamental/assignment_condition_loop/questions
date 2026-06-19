@@ -1,0 +1,8 @@
+Declare a variable let age = 25;. Write a series of if else statements that will:
+Print child to the console if age is less than equal to 12.
+Print teen to the console if age is between 13 and 18 (inclusive).
+Print adult to the console if age is above 18
+Do the same using switch case. 
+Declare a variable let arraySize = 25;. Using a for loop, add numbers from one onwards into an array till the arraySize is reached. 
+Accomplish the same using a while loop.
+Can you use return instead of break in loops?

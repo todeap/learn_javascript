@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .card {
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="main-title">DOM Practice Page</h1>
+
+    <p id="intro">
+        Welcome to DOM practice.
+    </p>
+    
+
+    <div id="container">
+
+        <div class="card">
+            <h2>Card 1</h2>
+            <p class="description">
+                Learning JavaScript DOM.
+            </p>
+            <button class="btn">Click Me</button>
+        </div>
+
+        <div class="card">
+            <h2>Card 2</h2>
+            <p class="description">
+                Practicing querySelector.
+            </p>
+            <button class="btn">Click Me</button>
+        </div>
+
+        <div class="card">
+            <h2>Card 3</h2>
+            <p class="description">
+                Practicing events.
+            </p>
+            <button class="btn">Click Me</button>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <form id="user-form">
+        <input
+            type="text"
+            id="username"
+            placeholder="Enter name"
+        >
+
+        <button type="submit">
+            Submit
+        </button>
+    </form>
+
+    <hr>
+
+    <ul id="languages">
+        <li>Java</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+    </ul>
+
+    <hr>
+
+    <img
+        id="profile-image"
+        src="https://via.placeholder.com/150"
+        alt="profile image"
+    >
+
+    <script>
+        let changedP = document.getElementsByTagName("p");
+        for(let p of changedP) {
+            p.textContent = "How's is the JOSH!";
+        }
+    </script>
+
+</body>
+</html>

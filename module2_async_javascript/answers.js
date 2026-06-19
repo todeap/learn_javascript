@@ -1,5 +1,5 @@
 // ---------------------------Question-1-----------------------------------
-/* const func = async () => {
+const func = async () => {
     console.log("Printing Before");
     setInterval(function () {
         console.log("Printing After 3 sec...");
@@ -7,7 +7,7 @@
     console.log("Printing after promise define.");
 };
 
-func(); */
+func();
 
 // ---------------------------Question-2-----------------------------------
 const func = function (request) {
@@ -50,7 +50,7 @@ function getDataDelay(request) {
 getDataDelay(request).then(data => console.log("Delay data from fetch :", data));
 
 //----------------------------------Question-7------------------------------------
-/* async function getData(request) {
+async function getData(request) {
     try {
         const response = await fetch(
             "https://reqres.in/api/users", request
@@ -63,4 +63,4 @@ getDataDelay(request).then(data => console.log("Delay data from fetch :", data))
     }
 }
 
-getData(request); */
+getData(request);
